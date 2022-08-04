@@ -6,13 +6,26 @@ form{
     margin-bottom: 5px;
 }
 
+.card h1 {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card p {
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .card {
     border: 3px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 200px;
+    max-height: 500px;
     margin: auto;
     text-align: center;
     font-family: arial;
+    margin: 5px;
   }
 
     .btn1 {
