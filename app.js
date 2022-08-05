@@ -30,9 +30,21 @@ function showMovie() {
           let p = document.createElement("p");
           p.innerHTML = element.overview;
           let p2 = document.createElement("p");
-          p2.innerHTML = "Release Date: " + element.release_date;
-          let p3 = document.createElement("p");
-          p3.innerHTML = "Rating: " + element.vote_average;
+          p2.classList.add("p2")
+          p2.innerHTML =  element.release_date.slice(0,4);
+          let p3 = document.createElement("p")
+          p3.classList.add("p3")
+          p3.innerHTML =  element.vote_average;
+          
+         if (element.vote_average >= 8 ) {
+            p3.style.color = "#00b894"
+          }
+          else if (element.vote_average >= 5) {
+            p3.style.color= "#fdcb6e"
+          }
+          else {
+            p3.style.color= "#d63031"
+          }
           let btn1 = document.createElement("button");
           btn1.classList.add("btn1");
           btn1.innerHTML = "Press to watch";
@@ -84,9 +96,20 @@ function showMovie() {
            let p = document.createElement("p");
            p.innerHTML = element.overview;
            let p2 = document.createElement("p");
-           p2.innerHTML = "Release Date: " + element.release_date;
+           p2.innerHTML =  element.release_date.slice(0,4);
            let p3 = document.createElement("p");
-           p3.innerHTML = "Rating: " + element.vote_average;
+           p3.classList.add("p3")
+          p3.innerHTML =  element.vote_average;
+          
+         if (element.vote_average >= 8 ) {
+            p3.style.color = "#00b894"
+          }
+          else if (element.vote_average >= 5) {
+            p3.style.color= "#fdcb6e"
+          }
+          else {
+            p3.style.color= "#d63031"
+          }
            let btn1 = document.createElement("button");
            btn1.classList.add("btn1");
            btn1.innerHTML = "Press to watch";
@@ -149,9 +172,20 @@ function movieGenre(id) {
           let p = document.createElement("p");
           p.innerHTML = element.overview;
           let p2 = document.createElement("p");
-          p2.innerHTML = "Release Date: " + element.release_date;
+          p2.innerHTML =  element.release_date.slice(0,4);
           let p3 = document.createElement("p");
-          p3.innerHTML = "Rating: " + element.vote_average 
+          p3.classList.add("p3")
+          p3.innerHTML =  element.vote_average;
+          
+         if (element.vote_average >= 8 ) {
+            p3.style.color = "#00b894"
+          }
+          else if (element.vote_average >= 5) {
+            p3.style.color= "#fdcb6e"
+          }
+          else {
+            p3.style.color= "#d63031"
+          }
           let btn1 = document.createElement("button");
           btn1.classList.add("btn1");
           btn1.innerHTML = "Press to watch";
