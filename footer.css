@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-container {
+    background-image: url(/pictures/_119787370_family.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+input {
+    height: 50px;
+}
+
+.header {
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh;
+
+}
+
+.box-1-search {
+    border-radius: 40px;
+    width: 300px;
+    text-align: start;
+}
+
+footer {
+    display: flow-root;
+}
+
+footer {
+    color: red;
+}
+
+table td {
+    border: solid 2px blue;
+    text-align: start;
+}
