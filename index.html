@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .header-container {
+            background-image: url(/pictures/_119787370_family.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+
+        input {
+            height: 50px;
+        }
+
+        .header {
+            text-align: center;
+            font-size: x-large;
+            padding: 10px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 1vh;
+
+        }
+
+        .box-1-search {
+            border-radius: 40px;
+            width: 300px;
+            text-align: start;
+        }
+
+        footer {
+            display: flow-root;
+        }
+
+        footer {
+            color: red;
+        }
+
+        table td {
+            border: solid 2px blue;
+            text-align: start;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-container">
+            <input class="header box-logo" type="button" value="PuBRiLL">
+            <input class=" header box-1-search" type="search" size="4" maxlength="4">
+            <input class=" header box-1" type="button" value="Resgister">
+            <input class=" header box-1" type="button" value="Sign in">
+        </div>
+    </header>
+
+    <footer class="footer">
+        <hr>
+        <table>
+            <tr class="footertr">
+                <td class="footertd">
+                    <div>COMPANY</div>
+                    <div>About Us</div>
+                    <div>Careers</div>
+                    <div>Contact</div>
+                </td>
+                <td class="footertd">
+                    <div>SUPPORT</div>
+                    <div>Contact Support</div>
+                    <div>Help Center</div>
+                    <div>Support Devices</div>
+                    <div>Activate Your Devince</div>
+                </td>
+                <td class="footertd">
+                    <div>Advertise With Us</div>
+                    <div>Parter With Us</div>
+                </td>
+            </tr>
+
+            <tr class="footertr">
+                <td class="footertd">
+                    <div>GET THE APPS</div>
+                    <a href="https://ipsw.me/">iOS</a> <br>
+                    <a href="https://www.android.com/intl/en_ca/"> android</a>
+                    <br>
+                    <a href="https://www.roku.com/en-ca/">RoKu</a>
+                    <br>
+                    <a href="https://www.primevideo.com/">Amazon</a>
+                </td>
+                <td class="footertd">
+                    <div>PRESS</div>
+                    <div>Press Releases</div>
+                    <div>Tubi in the News</div>
+                </td>
+                <td class="footertd">
+                    <div>LEGAL</div>
+                    <div>Privacy Policy (Updated)</div>
+                    <div>Terms of Use (Update)</div>
+                    <div>Do Not Sell My Personal Information</div>
+                </td>
+            </tr>
+        </table>
+    </footer>
 </body>
+
 </html>
