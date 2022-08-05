@@ -151,7 +151,7 @@ function movieGenre(id) {
           let p2 = document.createElement("p");
           p2.innerHTML = "Release Date: " + element.release_date;
           let p3 = document.createElement("p");
-          p3.innerHTML = "Rating: " + element.vote_average;
+          p3.innerHTML = "Rating: " + element.vote_average 
           let btn1 = document.createElement("button");
           btn1.classList.add("btn1");
           btn1.innerHTML = "Press to watch";

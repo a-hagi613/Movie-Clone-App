@@ -10,11 +10,18 @@ form{
     white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: medium;
 }
 .card p {
     white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: smaller;
+}
+
+.card img {
+    height: 250px;
+    width: 200px;
 }
 
 .card {
