@@ -36,6 +36,8 @@ function showMovie() {
           p3.classList.add("p3")
           p3.innerHTML =  element.vote_average;
           
+          
+
          if (element.vote_average >= 8 ) {
             p3.style.color = "#00b894"
           }
@@ -43,7 +45,7 @@ function showMovie() {
             p3.style.color= "#fdcb6e"
           }
           else {
-            p3.style.color= "#d63031"
+            p3.style.color= "#d63031" 
           }
           let btn1 = document.createElement("button");
           btn1.classList.add("btn1");
