@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* dropdown styles */
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: #ffd700;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .dropbtn {
+      align-items: center;
+      display: flex;
+      font-size: large;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: white;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+    /*button styles  */
+    .genres {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .genres button {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      border-radius: 10pc;
+    }
+    .genreBtn {
+      background-color: #ffd700;
+      cursor: pointer;
+    }
+
+    .genres button:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .genres {
+      display: block;
+    }
+  </style>
+  <body>
+    <ul>
+      <li class="dropdown">
+        <a href="#" class="dropbtn"
+          >Genres <i class="fa-solid fa-caret-down"></i
+        ></a>
+        <div class="genres">
+          <button id="action" class="genreBtn">Action</button>
+          <button id="adventure" class="genreBtn">Adventure</button>
+          <button id="animation" class="genreBtn">Animation</button>
+          <button id="comedy" class="genreBtn">Comedy</button>
+          <button id="crime" class="genreBtn">Crime</button>
+          <button id="documentary" class="genreBtn">Documentary</button>
+          <button id="drama" class="genreBtn">Drama</button>
+          <button id="family" class="genreBtn">Family</button>
+          <button id="fantasy" class="genreBtn">Fantasy</button>
+          <button id="history" class="genreBtn">History</button>
+          <button id="horror" class="genreBtn">Horror</button>
+          <button id="music" class="genreBtn">Music</button>
+          <button id="mystery" class="genreBtn">Mystery</button>
+          <button id="romance" class="genreBtn">Romance</button>
+          <button id="thriller" class="genreBtn">Thriller</button>
+          <button id="war" class="genreBtn">War</button>
+          <button id="western" class="genreBtn">Western</button>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

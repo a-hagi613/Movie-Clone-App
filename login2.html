@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    .imgDiv {
+      display: flex;
+      justify-content: center;
+    }
+    .formDiv {
+      display: flex;
+      justify-content: center;
+    }
+
+    input {
+      border-radius: 1pc;
+      height: 1.5pc;
+      border: 1px solid;
+      border-color: gold;
+    }
+    button {
+      border-radius: 1pc;
+      height: 1.5pc;
+      border: 1px solid;
+      border-color: gold;
+    }
+  </style>
+
+  <body>
+    <!-- <div class="imgDiv">
+      <img src="Golden Ticket.png" alt="logo" width="80%" height="50%" />
+    </div> -->
+
+    <div class="formDiv">
+      <form class="loginForm" method="POST" action="index.html">
+        <input
+          type="text"
+          name="username"
+          placeholder="Username.."
+          id="username"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password.."
+          id="password"
+        />
+        <input type="submit" />
+      </form>
+    </div>
+
+    <script>
+      const login = document.querySelector(".loginForm");
+      login.addEventListener("submit", function (e) {
+        //e.preventDefault stops the page from refreshing
+        e.preventDefault();
+        console.log(login.username.value);
+        console.log(login.password.value);
+
+        if (username.value === "Code Youth" && password.value === "123") {
+          console.log("success");
+          window.location.href = "index.html";
+        } else {
+          console.log("error");
+        }
+      });
+    </script>
+  </body>
+</html>

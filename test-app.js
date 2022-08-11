@@ -1,7 +1,10 @@
-//This code is for the main landing page and shows the trending movies for the day
 
-const url =
+//This code is for the main page and shows the popular movies for the day
+
+const url = 
 " https://api.themoviedb.org/3/discover/movie?api_key=0870ad4a8ba8822ee1a9f649978d935a&language=en-US&sort_by=popularity.desc&page=1";
+// "http://api.themoviedb.org/3/discover/movie?api_key=0870ad4a8ba8822ee1a9f649978d935a&language=en-US&sort_by=vote_average.desc&vote_count.gte=1000"
+
 function showMovie() {
     fetch(url)
       .then(res => {
@@ -64,8 +67,111 @@ function showMovie() {
         });
       });
   }
+//This shows the most popular movies when the page loads
+showMovie()
+//
+// //The home function above will call and take you back to the home page once you press the home button
+// const home = document.getElementsByClassName("horizontal-li");
+// trending.addEventListener("click", function (e) {
+//   console.log(e.target.id);
 
-  showMovie("");
+//   if (e.target.id === "home") {
+//       cards.innerHTML = ""
+//       showMovie("")
+//   }
+// })
+
+//This code is for the trending page and shows the highest rated movies of all time
+
+function trendingMovie() {
+    
+const url = 
+"http://api.themoviedb.org/3/discover/movie?api_key=0870ad4a8ba8822ee1a9f649978d935a&language=en-US&sort_by=vote_average.desc&vote_count.gte=1000"
+
+// https://api.themoviedb.org/3/movie/top_rated?api_key=0870ad4a8ba8822ee1a9f649978d935a&language=en-US&page=1
+    fetch(url)
+      .then(res => {
+        console.log("Response success");
+        // console.log(res);
+        return res.json();
+      })
+      .then(data => {
+        console.log("We got the data");
+        console.log(data);
+
+        data.results.forEach(element => {
+          console.log(
+            element.original_title +
+              ` https://image.tmdb.org/t/p/original/${element.poster_path}`
+          );
+
+          let cards = document.getElementById("cards");
+          let div = document.createElement("div");
+          div.classList.add("card");
+          let img = document.createElement("img");
+          img.src =
+            "https://image.tmdb.org/t/p/original/" + element.poster_path;
+          let h1 = document.createElement("h1");
+          h1.innerHTML = element.title;
+          let p = document.createElement("p");
+          p.innerHTML = element.overview;
+          let p2 = document.createElement("p");
+          p2.classList.add("p2")
+          p2.innerHTML =  element.release_date.slice(0,4);
+          p2.style.fontSize = "12px";
+          let p3 = document.createElement("p")
+          p3.classList.add("p3")
+          p3.innerHTML =  element.vote_average;
+          p3.style.fontSize = "12px";
+          
+          
+
+         if (element.vote_average >= 8 ) {
+            p3.style.color = "#00b894"
+          }
+          else if (element.vote_average >= 5) {
+            p3.style.color= "#fdcb6e"
+          }
+          else {
+            p3.style.color= "#d63031" 
+          }
+          let btn1 = document.createElement("button");
+          btn1.classList.add("btn1");
+          btn1.innerHTML = " Watch Movie";
+          // Append newly created elements
+          div.appendChild(img);
+          div.appendChild(h1);
+          div.appendChild(p);
+          div.appendChild(p2);
+          p2.appendChild(p3);
+          div.appendChild(btn1);
+          // cards.innerHTML = "";
+          cards.append(div);
+        });
+      });
+  }
+  //The trending function above will call once you press the trending button
+  const trending = document.querySelector(".horizontalNavItems");
+  trending.addEventListener("click", function (e) {
+    console.log(e.target.id);
+
+    if (e.target.id === "trending") {
+        cards.innerHTML = ""
+        trendingMovie("")
+    }
+})
+//The home function above will call and take you back to the home page once you press the home button
+const home = document.getElementsByClassName("horizontal-li");
+trending.addEventListener("click", function (e) {
+  console.log(e.target.id);
+
+  if (e.target.id === "home") {
+      cards.innerHTML = ""
+      showMovie("")
+  }
+})
+
+//   showMovie("");
   //function ends//
 
    //This code below shows the movies i search onto the console
@@ -81,32 +187,36 @@ function showMovie() {
          return res.json();
        })
        .then(data => {
-         console.log("We got the data");
-         // console.log(data.results);
-         data.results.forEach(element => {
-           console.log(
-             element.original_title +
-               ` https://image.tmdb.org/t/p/original/${element.poster_path}`
-           );
+        console.log("We got the data");
+        console.log(data);
 
-           let cards = document.getElementById("cards");
-           let div = document.createElement("div");
-           div.classList.add("card");
-           let img = document.createElement("img");
-           img.src =
-             "https://image.tmdb.org/t/p/original/" + element.poster_path;
-           let h1 = document.createElement("h1");
-           h1.innerHTML = element.title;
-           let p = document.createElement("p");
-           p.innerHTML = element.overview;
-           let p2 = document.createElement("p");
-           p2.innerHTML =  element.release_date.slice(0,4);
-           p2.style.fontSize = "12px";
-           let p3 = document.createElement("p");
-           p3.classList.add("p3")
+        data.results.forEach(element => {
+          console.log(
+            element.original_title +
+              ` https://image.tmdb.org/t/p/original/${element.poster_path}`
+          );
+
+          let cards = document.getElementById("cards");
+          let div = document.createElement("div");
+          div.classList.add("card");
+          let img = document.createElement("img");
+          img.src =
+            "https://image.tmdb.org/t/p/original/" + element.poster_path;
+          let h1 = document.createElement("h1");
+          h1.innerHTML = element.title;
+          let p = document.createElement("p");
+          p.innerHTML = element.overview;
+          let p2 = document.createElement("p");
+          p2.classList.add("p2")
+          p2.innerHTML =  element.release_date.slice(0,4);
+          p2.style.fontSize = "12px";
+          let p3 = document.createElement("p")
+          p3.classList.add("p3")
           p3.innerHTML =  element.vote_average;
           p3.style.fontSize = "12px";
           
+          
+
          if (element.vote_average >= 8 ) {
             p3.style.color = "#00b894"
           }
@@ -114,22 +224,22 @@ function showMovie() {
             p3.style.color= "#fdcb6e"
           }
           else {
-            p3.style.color= "#d63031"
+            p3.style.color= "#d63031" 
           }
-           let btn1 = document.createElement("button");
-           btn1.classList.add("btn1");
-           btn1.innerHTML = "Watch Movie";
-           // Append newly created elements
-           div.appendChild(img);
-           div.appendChild(h1);
-           div.appendChild(p);
-           div.appendChild(p2);
-           p2.appendChild(p3);
-           div.appendChild(btn1);
-
-           cards.append(div);
-         });
-       });
+          let btn1 = document.createElement("button");
+          btn1.classList.add("btn1");
+          btn1.innerHTML = " Watch Movie";
+          // Append newly created elements
+          div.appendChild(img);
+          div.appendChild(h1);
+          div.appendChild(p);
+          div.appendChild(p2);
+          p2.appendChild(p3);
+          div.appendChild(btn1);
+          // cards.innerHTML = "";
+          cards.append(div);
+        });
+      });
    }
    searchMovie("");
 
@@ -140,6 +250,7 @@ function showMovie() {
      //e.preventDefault stops the page from refreshing
      e.preventDefault();
      console.log("movie name under here");
+     //went inside the form and got the input name (movieName) and then got its value
      console.log(form.movieName.value);
      // innerHTML clears the page so the new search is on top
      cards.innerHTML = "";
@@ -178,13 +289,16 @@ function movieGenre(id) {
           let p = document.createElement("p");
           p.innerHTML = element.overview;
           let p2 = document.createElement("p");
+          p2.classList.add("p2")
           p2.innerHTML =  element.release_date.slice(0,4);
           p2.style.fontSize = "12px";
-          let p3 = document.createElement("p");
+          let p3 = document.createElement("p")
           p3.classList.add("p3")
           p3.innerHTML =  element.vote_average;
           p3.style.fontSize = "12px";
           
+          
+
          if (element.vote_average >= 8 ) {
             p3.style.color = "#00b894"
           }
@@ -192,13 +306,12 @@ function movieGenre(id) {
             p3.style.color= "#fdcb6e"
           }
           else {
-            p3.style.color= "#d63031"
+            p3.style.color= "#d63031" 
           }
           let btn1 = document.createElement("button");
           btn1.classList.add("btn1");
-          btn1.innerHTML = "Watch Movie";
+          btn1.innerHTML = " Watch Movie";
           // Append newly created elements
-
           div.appendChild(img);
           div.appendChild(h1);
           div.appendChild(p);
@@ -293,6 +406,14 @@ function movieGenre(id) {
   });
   // movieGenre(16)
 // 
+
+//dark/light mode function 
+function toggleDarkLight() {
+  let body = document.getElementById("body");
+  let currentClass = body.className;
+  body.className =
+    currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
 //MOVIE ID's
 // Action          28
 // Adventure       12

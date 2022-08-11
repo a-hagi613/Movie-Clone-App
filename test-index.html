@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test-style.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script
+      src="https://kit.fontawesome.com/98361f47e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body id="body" class="dark-mode">
+    <!-- <button
+    class="modeBtn
+    "
+    type="button"
+    name="dark_light"
+    onclick="toggleDarkLight()"
+    title="Toggle dark/light mode"
+  >
+    🌞/🌛
+  </button> -->
+    <div class="HorizontalNav">
+      <div class="nav">
+        
+        <ul class="horizontalNavItems">
+          <img
+            id="logo"
+            src="Golden Ticket.png"
+            alt="Logo"
+            width="5%"
+            height="25pc"
+          />
+
+
+          <form class="form">
+            <input
+              type="text"
+              name="movieName"
+              id="searchBox"
+              class="search"
+              placeholder="Search movie..."
+            />
+            <!-- <div id="searchBtnDiv"> -->
+              <button id="btn" type="submit">Search
+                <!-- Search <i class="fa-solid fa-magnifying-glass"></i> -->
+              </button>
+            <!-- </div> -->
+          </form>
+          <li class="horizontal-li">
+            <a href="#" id="home">Home <i class="fa-solid fa-house"></i></a>
+          </li>
+          <li class="horizontal-li">
+            <a href="#" id="trending">Highest Rated <i class="fa-solid fa-arrow-trend-up"></i></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >Genres <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="genres">
+              <button id="action" class="genreBtn">Action</button>
+              <button id="adventure" class="genreBtn">Adventure</button>
+              <button id="animation" class="genreBtn">Animation</button>
+              <button id="comedy" class="genreBtn">Comedy</button>
+              <button id="crime" class="genreBtn">Crime</button>
+              <button id="documentary" class="genreBtn">Documentary</button>
+              <button id="drama" class="genreBtn">Drama</button>
+              <button id="family" class="genreBtn">Family</button>
+              <button id="fantasy" class="genreBtn">Fantasy</button>
+              <button id="history" class="genreBtn">History</button>
+              <button id="horror" class="genreBtn">Horror</button>
+              <button id="music" class="genreBtn">Music</button>
+              <button id="mystery" class="genreBtn">Mystery</button>
+              <button id="romance" class="genreBtn">Romance</button>
+              <button id="thriller" class="genreBtn">Thriller</button>
+              <button id="war" class="genreBtn">War</button>
+              <button id="western" class="genreBtn">Western</button>
+            </div>
+          </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"
+              >
+              <img
+                id="codeYouth"
+                src="code youth.jpg"
+                alt="code youth profile"
+                height="5%"
+                width="6%"
+              />Profile  <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="genres">
+              <a href="login.html"><button id="sign-out" class="genreBtn" >Log Out (Code Youth)</button></a>
+              
+            </div>
+                </li>
+                <button
+    class="modeBtn
+    "
+    type="button"
+    name="dark_light"
+    onclick="toggleDarkLight()"
+    title="Toggle dark/light mode"
+  >
+    🌞/🌛
+  </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+    
+    </div>
+<!-- Main body where the movies will be displayed -->
+    <div><!--  vertical nav bar     -->
+        <div class="iconBar">
+            <ul class="verticalNavBar">    
+                <li> <a class="active" class="verticalLi" href="#"><i class="fa light fa-play pause"></i> Resume</a> </li>
+                <li><a href="#" class="verticalLi"><i class="fa light fa-clock"></i> Watchlist </a> </li>
+                <li><a href="#" class="verticalLi"><i class="fa light fa-heart"></i>Favorites</a>  </li>
+                <li><a href="#" class="verticalLi"><i class="fa light fa-trash-can"></i> Clear History</a> </li>
+                <li><a href="#" class="verticalLi"> <i class="fa solid fa-gear"></i>Settings </a></li> 
+            </ul>
+          </div>
+      
+       
+       
+        <main id="cards"> </main>
+        <!-- footer -->
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <!-- <div class="col-sm-12 col-md-6"> -->
+    
+                    <div class="col-xs-6 col-md-3">
+                        <!-- <h6>Genres</h6> -->
+                        <ul class="footer-links">
+                          <h6>Credits:</h6>
+                          <li><a href="https://www.brandmark.io">Brandmark</a></li>
+                          <li>
+                            <a href="https://www.themoviedb.org/documentation/api"
+                              >The Movie Database API</a
+                            >
+                          </li>
+                          <li>
+                            <a href="https://fontawesome.com/">Font Awesome</a>
+                          </li>
+                        </ul>
+                      </div>
+                  </center>
+                </div>
+      
+                <hr />
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                      Copyright &copy; 2022 All Rights Reserved by
+                      <a href="#" id="ticket">The Golden Ticket</a>.
+                    </p>
+                    <ul class="social-icons">
+                      <li>
+                        <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                      </li>
+                      <li>
+                        <a class="twitter" href="#"
+                          ><i class="fa light fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="dribbble" href="#"
+                          ><i class="fa brands fa-instagram"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="linkedin" href="#"
+                          ><i class="fa-brands fa-tiktok"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+        
+                </div>
+              </div>
+          
+            </div>
+          
+          </footer>
+
+  
+         
+    <script defer src="test-app.js"></script>
+  </body>
+</html>
