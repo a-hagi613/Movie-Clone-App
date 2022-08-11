@@ -250,6 +250,7 @@ nav ul li{
     border-radius: 6px;
     width: 200px;
     height: 30px;
+    color: black !important;
 }
 
 #btn {
