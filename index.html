@@ -1,178 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movieflix</title>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <!--  -->
     <link rel="stylesheet" href="Home.css" />
-    <link rel="icon" href="Pictures/movieflix.png">
-
-</head>
-<body>
+    <link rel="icon" href="Pictures/movieflix.png" />
+  </head>
+  <body>
     <div class="formDiv">
-        <img src="Pictures/movieflix.png">
+      <img src="Pictures/movieflix.png" />
 
-            <form id="search1" class="loginForm" method="POST" action="index.html">
-            <input
-                type="text"
-                name="username"
-                placeholder="Username.."
-                id="username"
-            />
-      
-            <input
-                type="password"
-                name="password"
-                placeholder="Password.."
-                id="password"
-            />
-            <input type="submit" id="button1" />
+      <div class="container-fluid">
+        <form id="search1" class="loginForm" method="POST" action="index.html">
+          <input
+            type="text"
+            name="username"
+            placeholder="Username.."
+            id="username"
+          />
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Password.."
+            id="password"
+          />
+          <input type="submit" id="button1" />
         </form>
+      </div>
     </div>
-      
-    
+
     <header>
-        <img id="img" src="Pictures/excited-group-people-watching-sport-match-championship-home.jpg">
-        
-        <div id="inf">
-            <p class="sign">Watch movies & TV shows</p>
-            <p class="sign">for free. Sign up Today!</p>
-            <p class="sign">No subsciption required.</p>
-            <button id="btn">Register</button>
-        </div>
+      <img
+        id="img"
+        src="Pictures/excited-group-people-watching-sport-match-championship-home.jpg"
+      />
+
+      <div id="inf">
+        <p class="sign">Watch movies & TV shows</p>
+        <p class="sign">for free. Sign up Today!</p>
+        <button id="btn">Register</button>
+      </div>
     </header>
 
     <main>
-        <div id="bod">
-            <div>
-                <center><p id="mainstream">Stream on any platform!</p>
-                <p class="lowstream">We are availbale for free on multiple platforms</p>
-                <p class="lowstream">Android, iOS, Roku, Apple TV, Amazon Fire TV, Xfinity X1,</p>
-                <p class="lowstream">Xbox, Samsung Smart TVs, Sony Smart TVs, PlayStation and the web.</p></center>
-            </div>
-        
-            
-            <center><img id="picdev" src="Pictures/devices.JPG"></center>
-            
+      <div id="bod">
+        <div>
+          <center>
+            <p id="mainstream">Stream on any platform!</p>
+            <p class="lowstream">
+              We are availbale for free on multiple platforms
+            </p>
+            <p class="lowstream">
+              Android, iOS, Roku, Apple TV, Amazon Fire TV, Xfinity X1,
+            </p>
+            <p class="lowstream">
+              Xbox, Samsung Smart TVs, Sony Smart TVs, PlayStation and the web.
+            </p>
+          </center>
         </div>
 
-        
-        
-            <img id="scene" src="Pictures/movielightscut.JPG">
-            
+        <center><img id="picdev" src="Pictures/devices.JPG" /></center>
+      </div>
 
-            <div id="bottomdiv">
-                <center>
-                <p id="bottomfirst">Countless Titles</p>
-                <p class="bottomsec">Watch amazing movies and TV shows for free. No</p>
-                <p class="bottomsec">subscription fees, and no credit cards. Just thousands of</p>
-                <p class="bottomsec">hours of streaming video content from studios like</p>
-                <p class="bottomsec">Paramount, Lionsgate, MGM and more.</p></center>
-            </div>
+      <img id="scene" src="Pictures/movielightscut.JPG" />
+
+      <div id="bottomdiv">
+        <center>
+          <p id="bottomfirst">Countless Titles</p>
+          <p class="bottomsec">
+            Watch amazing movies and TV shows for free. No
+          </p>
+          <p class="bottomsec">
+            subscription fees, and no credit cards. Just thousands of
+          </p>
+          <p class="bottomsec">
+            hours of streaming video content from studios like
+          </p>
+          <p class="bottomsec">Paramount, Lionsgate, MGM and more.</p>
+        </center>
+      </div>
     </main>
 
     <div class="second-wrapper">
-        <nav class="second-nav">
-            <h1>Stream Anywhere</h1>
-            <p id="streampara">
-                This site is available for free on Android, <br><br>
-                iOS, Roku, Apple TV, Amazon Fire TV, <br><br>
-                Xfinity X1, Xbox, Samsung Smart TVs,
-                Sony Smart Tvs, PlayStation and the <br><br>
-                web
-            </p>
-        </nav>
+      <nav class="second-nav">
+        <h1>Stream Anywhere</h1>
+        <p id="streampara">
+          This site is available for free on Android, <br /><br />
+          iOS, Roku, Apple TV, Amazon Fire TV, <br /><br />
+          Xfinity X1, Xbox, Samsung Smart TVs, Sony Smart Tvs, PlayStation and
+          the <br /><br />
+          web
+        </p>
+      </nav>
     </div>
     <div class="movies-cover">
-        <section class="front-cover">
-            <h1>Thousands of titles</h1>
-            <p id="paragraph">
-                Watch amazing movies and TV shows <br>
-                for free. No Subscription fees, and no <br>
-                credit cards. Just thounds of hours <br>
-                of streaming vidoe content from <br>
-                studios like Paramount, Lionsgate, <br>
-                MGM and more.
-            </p>
-            <ul>
-                <li><img src="Pictures/lion.jpg" width="100px" height="80px"></li>
-                <li><img src="Pictures/1656644640488.jpg" width="80px"></li>
-                <li> <img src="Pictures/WB_logo_black.png" width="80px"></li>
-                <li> <img src="Pictures/mgm.jpg" width="80px"></li>
-            </ul>
-        </section>
+      <section class="front-cover">
+        <h1>Thousands of titles</h1>
+        <p id="paragraph">
+          Watch amazing movies and TV shows <br />
+          for free. No Subscription fees, and no <br />
+          credit cards. Just thounds of hours <br />
+          of streaming vidoe content from <br />
+          studios like Paramount, Lionsgate, <br />
+          MGM and more.
+        </p>
+        <ul>
+          <li><img src="Pictures/lion.jpg" width="100px" height="80px" /></li>
+          <li><img src="Pictures/1656644640488.jpg" width="80px" /></li>
+          <li><img src="Pictures/WB_logo_black.png" width="80px" /></li>
+          <li><img src="Pictures/mgm.jpg" width="80px" /></li>
+        </ul>
+      </section>
     </div>
     <footer class="footer">
-        <br> <br>
-        <div class="hr1-hr2">
-            <nav class="hr1">
-                <hr>
-            </nav>
-            <nav class="hr2">
-                <hr>
-            </nav>
-        </div>
-        <div class="footer1">
-            <nav class="footer1-nav">
-                <title>COMPANY</title>
-                <li>About Us</li>
-                <li>Careers</li>
-                <li>Contact</li>
-            </nav>
-            <nav class="footer1-nav">
-                <title>SUPPORT</title>
-                <li>Contact Support</li>
-                <li>Help Center</li>
-                <li>Supported Devices</li>
-                <li>Activate Your Devices</li>
-            </nav>
-            <nav class="footer1-nav">
-                <title>PARTNERS</title>
-                <li>Advertise with Us</li>
-                <li>Partner with Us</li>
-            </nav>
-        </div>
-        <div class="footer2">
-            <nav class="footer2-nav">
-                <title>GET THE APPS</title>
-                <li>iOS</li>
-                <li>Android</li>
-                <li>Roku</li>
-                <li>Amazon Fire</li>
-            </nav>
-            <nav class="footer2-nav">
-                <title>PRESS</title>
-                <li>Press Releases</li>
-                <li>MovieFlix in The News</li>
-            </nav>
-            <nav class="footer2-nav">
-                <title>LEGAL</title>
-                <li>Privacy Policy (Updated)</li>
-                <li>Terms of Use (Updated)</li>
-                <li>Do Not Sell My Information</li>
-            </nav>
-        </div>
+      <br />
+      <br />
+      <div class="hr1-hr2">
+        <nav class="hr1">
+          <hr />
+        </nav>
+        <nav class="hr2">
+          <hr />
+        </nav>
+      </div>
+      <div class="footer1">
+        <nav class="footer1-nav">
+          <title>COMPANY</title>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </nav>
+        <nav class="footer1-nav">
+          <title>SUPPORT</title>
+          <li>Contact Support</li>
+          <li>Help Center</li>
+          <li>Supported Devices</li>
+          <li>Activate Your Devices</li>
+        </nav>
+        <nav class="footer1-nav">
+          <title>PARTNERS</title>
+          <li>Advertise with Us</li>
+          <li>Partner with Us</li>
+        </nav>
+      </div>
+      <div class="footer2">
+        <nav class="footer2-nav">
+          <title>GET THE APPS</title>
+          <li>iOS</li>
+          <li>Android</li>
+          <li>Roku</li>
+          <li>Amazon Fire</li>
+        </nav>
+        <nav class="footer2-nav">
+          <title>PRESS</title>
+          <li>Press Releases</li>
+          <li>MovieFlix in The News</li>
+        </nav>
+        <nav class="footer2-nav">
+          <title>LEGAL</title>
+          <li>Privacy Policy (Updated)</li>
+          <li>Terms of Use (Updated)</li>
+          <li>Do Not Sell My Information</li>
+        </nav>
+      </div>
 
-        <hr style="background-color: rgb(27, 7, 27) ;">
-      <center><p id="foot2">Copyright ©️ 2022 All Rights Reserved by Movieflix.
-        </p></center>
+      <hr style="background-color: rgb(27, 7, 27)" />
+      <center>
+        <p id="foot2">Copyright ©️ 2022 All Rights Reserved by Movieflix.</p>
+      </center>
     </footer>
 
     <script>
-        const login = document.querySelector(".loginForm");
-        login.addEventListener("submit", function (e) {
-          //e.preventDefault stops the page from refreshing
-          e.preventDefault();
-          console.log(login.username.value);
-          console.log(login.password.value);
-          if (username.value === "Code Youth" && password.value === "123") {
-            console.log("success");
-            window.location.href = "Movies-page.html";
-          } else {
-            alert("Wrong username or password");
-          }
-        });
+      const login = document.querySelector(".loginForm");
+      login.addEventListener("submit", function (e) {
+        //e.preventDefault stops the page from refreshing
+        e.preventDefault();
+        console.log(login.username.value);
+        console.log(login.password.value);
+        if (username.value === "Code Youth" && password.value === "123") {
+          console.log("success");
+          window.location.href = "Movies-page.html";
+        } else {
+          alert("Wrong username or password");
+        }
+      });
     </script>
-</body>
+  </body>
 </html>

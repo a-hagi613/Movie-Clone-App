@@ -1,9 +1,25 @@
-# [Code Youth Canada](https://www.code-youth.ca/) Cohort 6 Demo Day Presentation 
+# [Code Youth Canada](https://www.code-youth.ca/) Cohort 6 Demo Day Presentation
 
+# Project Name: Movieflix
 
-# Name:
+# Preview
 
-### Movieflix
+## Login page
+
+![login](./Pictures/mf-login.jpg)
+
+## Home Page
+
+![login](./Pictures/mf-main1.jpg)
+![login](./Pictures/mf-main2.jpg)
+
+## Search from over 10,000 titles
+
+![login](./Pictures/mf-search.jpg)
+
+## Pick from over 15 different genres
+
+![login](./Pictures/mf-genres.png)
 
 # Introduction:
 
@@ -11,7 +27,7 @@ This app called Movieflix is your one stop shop for all things movies, powered b
 
 ## Link to site: https://movieflix-app.vercel.app/index.html
 
-***(Login username is 'Code Youth' and password is '123')***
+**_(Login username is 'Code Youth' and password is '123')_**
 
 # Upcoming Features:
 
@@ -26,7 +42,8 @@ This app called Movieflix is your one stop shop for all things movies, powered b
 4. Node.js
 5. Bootstrap
 
-#  Contributors:
+# Contributors:
+
 Singa: https://github.com/singa-singa
 Steven: https://github.com/WatchmanSB
 Abdullahi: https://github.com/a-hagi613
